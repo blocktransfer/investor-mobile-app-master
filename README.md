@@ -128,3 +128,5 @@
   
   
 </ol>
+
+- App feedback: submit feature suggestions and ideas
