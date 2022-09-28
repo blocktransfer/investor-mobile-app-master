@@ -19,31 +19,40 @@
 - Use government ID to pre-fill as much as poss. & then get:
 
 <ol>
+  
 - Name
+  
 - Phone
+  
 - Email
+  
 - social/FTIN
+  
 - Address
 </ol>
 
 - Generate seed phrase, have them write it down 
 
 <ol>
+  
 - Send us the pub key only
 </ol>
 
 - Ask if they have pre-existing shares
 
 <ol>
-- If so, what company
+
+  - If so, what company
 
   We manually send these yay
 </ol>
 
 - Launch Plaid to link bank account
 <ol>
+  
 - Call Auth to verify account against name 
 </ol>
+
 - Initial deposit screen
 
 
