@@ -9,7 +9,7 @@
 
 ## Investor App (same but you just update the beta testers):
 
-https://www.figma.com/file/nctdBygz0jAEyLrJrAl63L/Block-Transfer-Investor-App-Prototype?node-id=0%3A1
+### [**Figma Link**](https://www.figma.com/file/nctdBygz0jAEyLrJrAl63L/Block-Transfer-Investor-App-Prototype)
 
 #### Onboarding
 
