@@ -58,12 +58,73 @@
 
 
 ####  Wallet/app
-- View portfolio
-- Discover all stocks
-- Trade
-- Vote
-- Transfer (gift fiat or stock, incl. option to make it available at some point in the future)
-- Any other ideas?
+
+
+##### Portfolio
+  
+- Overall growth
+
+- Any outstanding voting propositions
+
+- Positions
+
+- Changes by SDEX
+
+
+##### Discover all stocks
+
+- Indices at header based on standard real-time query only
+
+- Click to open stock-specific screen with all relevant info
+
+- Trade button
+
+- Option to create recurring investments (send a notification, they have to sign into wallet to execute DRIP buy txn?)
+
+
+##### Quick Action
+
+- Trade anything by typing in a ticker 
+
+- Send shares to another federation address
+
+- Can gift fiat or stock, incl. option to make available at some point in the future using claimable balances?
+
+##### Notifications / Support
+
+- Zendesk drop-in
+
+- Trade/account history via notifications
+
+#### Settings
+
+- Show federation address
+
+- Manage email
+
+- Manage physical address
+
+- Manage recurring items
+
+- View account trading history
+
+- Tax docs
+
+- Bank connections
+
+- Misc settings
+
 <ol>
-- Option to let us push a “verify” request to the wallet which shows up like a Google verification popup which they can accept and that signs a random message which we can use to verify their identity on support calls
+  
+  - Dark theme
+  
+  - Biometrics
+  
+  - Dividend reinvestment preference
+  
+  - Manage PIN 
+  
+  - Account beneficiary
+  
+  
 </ol>
