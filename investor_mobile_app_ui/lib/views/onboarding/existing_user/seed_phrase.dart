@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/existing_user/pass_phrase.dart';
 
 class SeedPhrase extends StatefulWidget {
   const SeedPhrase({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _SeedPhraseState extends State<SeedPhrase> {
           child: Column(children: <Widget>[
             Padding(
               //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
-              padding: const EdgeInsets.only(top: 170.0),
+              padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 170.0),
               child: Center(
                 child: Text(
                   'Import Your Existing Account',
@@ -33,30 +34,31 @@ class _SeedPhraseState extends State<SeedPhrase> {
                   /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
-                    child: Text(
-                      'Enter your seed phrase in a secure room without cameras',
-                        style: TextStyle(color: Colors.black, fontSize: 15),
-                    ),
+                  child: Text(
+                    'Enter your seed phrase in a secure room without cameras',
+                    style: TextStyle(color: Colors.black, fontSize: 15),
+                  ),
+                ),
               ),
             ),
-            ),
-            Container(
-              height: 500,
+            SizedBox(
               width: 250,
               child: TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: 'Email',
-                    hintText: 'Enter valid email id as abc@gmail.com'),
+                    labelText: 'Seed Phrase',
+                    hintText: 'Enter valid seed phrase'),
+                maxLines: 3,
+                minLines: 1,
               ),
             ),
             SizedBox(
               height: 50,
             ),
             Text(
-                'Your key never leaves this device',
-                style: TextStyle(color: Colors.black, fontSize: 15),
-              ),
+              'Your key never leaves this device',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
             SizedBox(
               height: 50,
             ),
@@ -68,8 +70,8 @@ class _SeedPhraseState extends State<SeedPhrase> {
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  //   Navigator.push(
-                  //       context, MaterialPageRoute(builder: (_) => BlockTransferParentView()));
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (_) => PassPhrase()));
                 },
                 child: Text(
                   'Continue',
