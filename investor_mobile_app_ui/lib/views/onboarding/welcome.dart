@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'existing_user/seed_phrase.dart';
+import 'new_user/why_bt_1.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -30,7 +31,7 @@ class Welcome extends StatelessWidget {
                     /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
-                    child: Image.asset('asset/images/BT_logo.png',
+                    child: Image.asset('asset/images/VerticalSmall.png',
                         width: 200, height: 150)),
               ),
             ),
@@ -42,8 +43,8 @@ class Welcome extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  //   Navigator.push(
-                  //       context, MaterialPageRoute(builder: (_) => BlockTransferParentView()));
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (_) => WhyBTOne()));
                 },
                 child: Text(
                   'Get Started',

@@ -1,25 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/new_user/why_bt_2.dart';
 
-import '../../wallet/block_transfer_parent_view.dart';
+class WhyBTOne extends StatelessWidget {
+  const WhyBTOne({Key? key}) : super(key: key);
 
-class FinalScreenExisting extends StatefulWidget {
-  const FinalScreenExisting({Key? key}) : super(key: key);
-
-  @override
-  State<FinalScreenExisting> createState() => _FinalScreenExistingState();
-}
-
-class _FinalScreenExistingState extends State<FinalScreenExisting> {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Center(
           child: Column(children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 150),
+              padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 100),
               child: Center(
                 child: Container(
                   /*decoration: BoxDecoration(
@@ -32,30 +27,27 @@ class _FinalScreenExistingState extends State<FinalScreenExisting> {
             SizedBox(
               height: 20,
             ),
-            Center(
+            Padding(
+            padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+            child: Center(
               child: Text(
-                'You entered',
+                'At a traditional brokerage, your trades look like this:',
                 style: TextStyle(color: Colors.black, fontSize: 25),
               ),
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Center(
-              child: Text(
-                '123-45-6789',
-                style: TextStyle(color: Colors.purple, fontSize: 30),
-              ),
             ),
             SizedBox(
               height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.only(
-                  left: 30.0, right: 30, top: 30, bottom: 0),
-              child: Text(
-                'By continuing, you assert that: the numbers shown on this page is{/are} the correct taxpayer identification number{s}. I{We} am{are} not subject to backup withholding because: {plural if joint or company}',
-                style: TextStyle(color: Colors.black, fontSize: 15),
+              padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+              child: Center(
+                child: Container(
+                  /*decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(50.0)),*/
+                    child: Image.asset('asset/images/TradeDiagram.png',
+                        width: width - 30, height: 400)),
               ),
             ),
             SizedBox(
@@ -69,8 +61,8 @@ class _FinalScreenExistingState extends State<FinalScreenExisting> {
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => BlockTransferParentView()));
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => WhyBTTwo()));
                 },
                 child: Text(
                   'Continue',
@@ -84,3 +76,4 @@ class _FinalScreenExistingState extends State<FinalScreenExisting> {
     );
   }
 }
+
