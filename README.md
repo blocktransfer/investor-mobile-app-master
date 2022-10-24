@@ -1,13 +1,4 @@
-# Investor Portal
-## Pre-launch:
-
-- Users enter email to join waitlist
-- Shows their place in line
-- Option to refer friends to move up 50 spots
-- Share via socials/email
-- Unique referral code
-
-## Investor App (same but you just update the beta testers):
+## Investor App
 
 ### [**Figma Link**](https://www.figma.com/file/nctdBygz0jAEyLrJrAl63L/Block-Transfer-Investor-App-Prototype)
 
