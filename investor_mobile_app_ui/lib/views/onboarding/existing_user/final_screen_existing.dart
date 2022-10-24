@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../util/appcolors.dart';
 import '../../wallet/block_transfer_parent_view.dart';
 
 class FinalScreenExisting extends StatefulWidget {
@@ -13,13 +14,23 @@ class FinalScreenExisting extends StatefulWidget {
 class _FinalScreenExistingState extends State<FinalScreenExisting> {
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
+      body: Stack(children: [
+        Align(
+          alignment: Alignment.topLeft,
+          child: Container(
+            /*decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(50.0)),*/
+              child: Image.asset('asset/images/bc_small1.png')),
+        ),
+        SingleChildScrollView(
         child: Center(
           child: Column(children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 150),
+              padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 100),
               child: Center(
                 child: Container(
                   /*decoration: BoxDecoration(
@@ -44,7 +55,7 @@ class _FinalScreenExistingState extends State<FinalScreenExisting> {
             Center(
               child: Text(
                 '123-45-6789',
-                style: TextStyle(color: Colors.purple, fontSize: 30),
+                style: TextStyle(color: AppColors.purpleTheme, fontSize: 30),
               ),
             ),
             SizedBox(
@@ -61,16 +72,23 @@ class _FinalScreenExistingState extends State<FinalScreenExisting> {
             SizedBox(
               height: 20,
             ),
-            Container(
+          ]),
+        ),
+      ),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15.0),
+            child: Container(
               height: 50,
-              width: 250,
+              width: width,
               decoration: BoxDecoration(
-                  color: Colors.purple,
+                  color: AppColors.purpleTheme,
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => BlockTransferParentView()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => BlockTransferParentView()));
                 },
                 child: Text(
                   'Continue',
@@ -78,9 +96,8 @@ class _FinalScreenExistingState extends State<FinalScreenExisting> {
                 ),
               ),
             ),
-          ]),
+          ),
         ),
-      ),
-    );
+    ]));
   }
 }

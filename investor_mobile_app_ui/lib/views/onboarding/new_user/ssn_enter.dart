@@ -1,18 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:investor_mobile_app_ui/views/onboarding/existing_user/final_screen_existing.dart';
 
 import '../../../util/appcolors.dart';
 import '../../../util/num_pad.dart';
+import '../existing_user/final_screen_existing.dart';
 
-class PassPhrase extends StatefulWidget {
-  const PassPhrase({Key? key}) : super(key: key);
+class SSNenter extends StatefulWidget {
+  const SSNenter({Key? key}) : super(key: key);
 
   @override
-  State<PassPhrase> createState() => _PassPhraseState();
+  State<SSNenter> createState() => _SSNenterState();
 }
 
-class _PassPhraseState extends State<PassPhrase> {
+class _SSNenterState extends State<SSNenter> {
   final TextEditingController _myController = TextEditingController();
 
   @override
@@ -24,7 +24,7 @@ class _PassPhraseState extends State<PassPhrase> {
           Align(
             alignment: Alignment.topLeft,
             child: Container(
-                /*decoration: BoxDecoration(
+              /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
                 child: Image.asset('asset/images/bc_small1.png', width: width)),
@@ -45,11 +45,11 @@ class _PassPhraseState extends State<PassPhrase> {
                 ),
               ),
               Center(
-                  child: Text(
-                    'Pass Phrase',
-                    style: TextStyle(color: Colors.black, fontSize: 40),
-                  ),
+                child: Text(
+                  'Enter {both} your {SSN/',
+                  style: TextStyle(color: Colors.black, fontSize: 25),
                 ),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Center(
@@ -58,8 +58,8 @@ class _PassPhraseState extends State<PassPhrase> {
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
                     child: Text(
-                      'Enter the last four digts of your tax ID number',
-                      style: TextStyle(color: Colors.black, fontSize: 15),
+                      'EIN/FTIN(S)}',
+                      style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
                   ),
                 ),
@@ -70,13 +70,13 @@ class _PassPhraseState extends State<PassPhrase> {
                   height: 50,
                   child: Center(
                       child: TextField(
-                    controller: _myController,
-                    textAlign: TextAlign.center,
-                    showCursor: false,
-                    style: const TextStyle(fontSize: 40),
-                    // Disable the default soft keybaord
-                    keyboardType: TextInputType.none,
-                  )),
+                        controller: _myController,
+                        textAlign: TextAlign.center,
+                        showCursor: false,
+                        style: const TextStyle(fontSize: 40),
+                        // Disable the default soft keybaord
+                        keyboardType: TextInputType.none,
+                      )),
                 ),
               ),
               // implement the custom NumPad

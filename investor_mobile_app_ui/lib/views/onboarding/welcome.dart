@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../util/appcolors.dart';
 import 'existing_user/seed_phrase.dart';
 import 'new_user/why_bt_1.dart';
 
@@ -39,7 +40,7 @@ class Welcome extends StatelessWidget {
               height: 50,
               width: 250,
               decoration: BoxDecoration(
-                  color: Colors.purple,
+                  color: AppColors.purpleTheme,
                   borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {

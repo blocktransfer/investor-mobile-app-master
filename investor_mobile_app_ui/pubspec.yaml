@@ -66,8 +66,8 @@ flutter:
      - asset/images/VerticalSmall.png
      - asset/images/TradeDiagram.png
      - asset/images/returns.png
-     - asset/images/blockchain icon small (1).png
-     - asset/images/blockchain icon small (2).png
+     - asset/images/bc_small1.png
+     - asset/images/bc_small2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

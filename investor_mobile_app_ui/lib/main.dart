@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investor_mobile_app_ui/util/appcolors.dart';
 import 'package:investor_mobile_app_ui/views/onboarding/welcome.dart';
 import 'package:investor_mobile_app_ui/views/wallet/block_transfer_parent_view.dart';
 
@@ -80,7 +81,7 @@ class _LoginDemoState extends State<LoginDemo> {
               height: 50,
               width: 250,
               decoration: BoxDecoration(
-                  color: Colors.purple, borderRadius: BorderRadius.circular(20)),
+                  color: AppColors.purpleTheme, borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
                   Navigator.push(
