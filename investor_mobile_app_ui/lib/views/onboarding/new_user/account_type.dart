@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:investor_mobile_app_ui/views/onboarding/new_user/ssn_enter.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/verification/company_verification.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/verification/individual_verification.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/verification/joint_verification.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/verification/minor_verification.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/verification/trust_verification.dart';
 
 import '../../../util/appcolors.dart';
 
@@ -56,7 +61,7 @@ class AccountType extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => SSNenter()));
+                          MaterialPageRoute(builder: (_) => JointVerification()));
                     },
                     child: Text(
                       'Joint',
@@ -76,7 +81,7 @@ class AccountType extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => SSNenter()));
+                          MaterialPageRoute(builder: (_) => MinorVerification()));
                     },
                     child: Text(
                       'Minor',
@@ -96,7 +101,7 @@ class AccountType extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => SSNenter()));
+                          MaterialPageRoute(builder: (_) => TrustVerification()));
                     },
                     child: Text(
                       'Trust',
@@ -116,7 +121,7 @@ class AccountType extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => SSNenter()));
+                          MaterialPageRoute(builder: (_) => CompanyVerification()));
                     },
                     child: Text(
                       'Company',
@@ -136,7 +141,7 @@ class AccountType extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => SSNenter()));
+                          MaterialPageRoute(builder: (_) => IndividualVerification()));
                     },
                     child: Text(
                       'International Individual',
@@ -161,7 +166,7 @@ class AccountType extends StatelessWidget {
               child: TextButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => SSNenter()));
+                      MaterialPageRoute(builder: (_) => IndividualVerification()));
                 },
                 child: Text(
                   'US Individual',
