@@ -14,7 +14,7 @@ class WhyBTThree extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Stack(children: [
           Align(
-            alignment: Alignment.topLeft,
+            alignment: Alignment.topCenter,
             child: Container(
                 /*decoration: BoxDecoration(
                         color: Colors.red,
@@ -43,21 +43,30 @@ class WhyBTThree extends StatelessWidget {
                         /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
-                        child: Image.asset('asset/images/returns.png',
-                            width: width, height: 300)),
+                        child: Image.asset('asset/images/direct_trade.png',
+                            width: width, height: 250)),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                   child: Center(
                     child: Text(
-                      'Trade with other investors for free.',
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                      'Trade with other',
+                      style: TextStyle(color: Colors.black, fontSize: 35),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+                  child: Center(
+                    child: Text(
+                      'investors for free.',
+                      style: TextStyle(color: Colors.black, fontSize: 35),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 60,
+                  height: 45,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 50, right: 50),

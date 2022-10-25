@@ -10,14 +10,24 @@ class Welcome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
+      body: Stack(children: [
+        Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+            /*decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(50.0)),*/
+              child: Image.asset('asset/images/bc_small1.png', width: width)),
+        ),
+        SingleChildScrollView(
         child: Center(
           child: Column(children: <Widget>[
             Padding(
               //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
-              padding: const EdgeInsets.only(top: 200.0),
+              padding: const EdgeInsets.only(top: 220.0),
               child: Center(
                 child: Text(
                   'Welcome to',
@@ -79,6 +89,6 @@ class Welcome extends StatelessWidget {
           ]),
         ),
       ),
-    );
+    ]));
   }
 }

@@ -68,6 +68,7 @@ flutter:
      - asset/images/returns.png
      - asset/images/bc_small1.png
      - asset/images/bc_small2.png
+     - asset/images/direct_trade.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

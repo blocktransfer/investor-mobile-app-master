@@ -51,19 +51,46 @@ class WhyBTTwo extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 15.0, right: 15.0),
                   child: Center(
                     child: Text(
-                      'Don\'t lose 0.5% per year from hidden broker spreads.*',
+                      'Don\'t lose 0.5% per',
+                      style: TextStyle(color: Colors.black, fontSize: 25),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+                  child: Center(
+                    child: Text(
+                      'year from hidden',
+                      style: TextStyle(color: Colors.black, fontSize: 25),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 15.0, right: 15.0),
+                  child: Center(
+                    child: Text(
+                      'broker spreads.*',
                       style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 60,
+                  height: 45,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 50, right: 50),
                   child: Center(
                     child: Text(
-                      '*On average for a diversified portfoio at a leading broker.',
+                      '*On average for a diversified',
+                      style: TextStyle(color: Colors.black, fontSize: 15),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 50, right: 50),
+                  child: Center(
+                    child: Text(
+                      'portfoio at a leading broker.',
                       style: TextStyle(color: Colors.black, fontSize: 15),
                     ),
                   ),
