@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:investor_mobile_app_ui/views/onboarding/security/gen_seed.dart';
 
 import '../../../util/appcolors.dart';
 
@@ -81,8 +82,8 @@ class _IndividualVerificationState extends State<IndividualVerification> {
                     borderRadius: BorderRadius.circular(20)),
                 child: TextButton(
                   onPressed: () {
-                    // Navigator.push(context,
-                    //     MaterialPageRoute(builder: (_) => AccountType()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (_) => GenSeed()));
                   },
                   child: Text(
                     'Continue',
