@@ -13,6 +13,23 @@ class _DiscoverViewState extends State<DiscoverView> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
+        body: Stack(
+          children: [
+            SingleChildScrollView(
+              child: Column(children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 50),
+                  child: Center(
+                    child: Text(
+                      'Discover',
+                      style: TextStyle(color: Colors.black, fontSize: 25),
+                    ),
+                  ),
+                ),
+              ]),
+            ),
+          ],
+        )
     );
   }
 }

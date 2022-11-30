@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investor_mobile_app_ui/stellar-api/api-test.dart';
 import 'package:investor_mobile_app_ui/util/appcolors.dart';
 import 'package:investor_mobile_app_ui/views/onboarding/welcome.dart';
 import 'package:investor_mobile_app_ui/views/wallet/block_transfer_parent_view.dart';
@@ -84,6 +85,7 @@ class _LoginDemoState extends State<LoginDemo> {
                   color: AppColors.purpleTheme, borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
+                  testAPI();
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => BlockTransferParentView()));
                 },
