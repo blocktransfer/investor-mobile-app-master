@@ -93,6 +93,8 @@ class _IndividualVerificationState extends State<IndividualVerification> {
               ),
             ),
           ),
-        ]));
+        ]
+      )
+    );
   }
 }
