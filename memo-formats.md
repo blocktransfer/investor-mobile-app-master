@@ -30,3 +30,12 @@ could translate to the memo: ``Test|32.2212122|Violet''
 - Purchase date or ``''
 
 Where DWAC transactions have the price associated with their paging token which is stored as a data object in  DIST_DATA_TOML. # todo: Need to move production databases to Dynamo eventually, possible caches too
+
+### Paging tokens
+
+
+### Chief memo cache
+
+- OfferID cached or distribution paging token
+- Investor public key
+
