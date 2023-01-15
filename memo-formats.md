@@ -2,11 +2,11 @@ This file details text memo formats for various operations. All memos are pipe-d
 
 For example:
 
-- ``Test''
+- ``Test'' or ``Case''
 - Price
 - Color
 
-would translate to the memo: Test|32.2212122|Violet
+could translate to the memo: ``Test|32.2212122|Violet''
 
 
 
@@ -29,4 +29,4 @@ would translate to the memo: Test|32.2212122|Violet
 - Original basis price or ``uncovered'' or ``DWAC''
 - Purchase date or ``''
 
-Where DWAC transactions have the price associated with their paging token which is stored as a data object in the BT_DIST account.
+Where DWAC transactions have the price associated with their paging token which is stored as a data object in  DIST_DATA_TOML. # todo: Need to move production databases to Dynamo eventually, possible caches too
