@@ -15,9 +15,17 @@ could translate to the memo: ``Test|32.2212122|Violet''
 ### 
 
 
+## Issuing memos
 
+### {New/IPO} stock
 
+- {S-{formType}||A-1} ({regFile#wDash})
 
+todo: Consider date used here for expiration of offering doc, ditto for private.
+
+### New private stock
+
+- ({CIKwithoutLeadingZeros})
 
 
 
